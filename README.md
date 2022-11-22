@@ -1,4 +1,4 @@
-# Проект по автоматизации UI тестирования для главной страницы сайта Pobeda.aero
+# Проект по автоматизации Mobile тестирования для приложения Wikipedia
 
 ## :green_book: Содержание:
 
@@ -8,7 +8,7 @@
 - [Allure-отчет](#-allure-отчет)
 - [Интеграция с Allure TestOps](#-интеграция-с-allure-testops)
 - [Уведомление в Telegram с использованием бота](#-уведомление-в-telegram-с-использованием-бота)
-- [Видео запуска одного из тестов в Selenoid](#-видео-запуска-одного-из-тестов-в-selenoid)
+- [Видео запуска одного из тестов в BrowserStack](#-видео-запуска-одного-из-тестов-в-browserstack)
 
 ## :computer: Использованный стек технологий
 
@@ -103,9 +103,9 @@ Allure-отчет включает в себя:
 <img width="70%" title="Telegram Notifications" src="images/screenshots/notificationTelegram.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Selenoid" src="images/logo/Selenoid.svg"> Видео запуска одного из тестов в Selenoid
+## <img width="4%" style="vertical-align:middle" title="BrowserStack" src="images/logo/BrowserStack.svg"> Видео запуска одного из тестов в BrowserStack
 
 Для каждого теста выполняется запись видео. Ниже представлен пример видео прохождения теста.
 <p align="center">
-  <img title="Selenoid Video" src="images/gif/videoExampleMobile.gif">
+  <img title="BrowserStack Video" src="images/gif/videoExampleMobile.gif">
 </p>
