@@ -49,7 +49,7 @@ Allure-отчет включает в себя:
 ```
 ./gradlew clean test -DdeviceHost=emulation
 ```
-### Для запуска на локальном устройстве:
+### Для запуска на локальном устройстве Android:
 ```
 ./gradlew clean test -DdeviceHost=real
 ```

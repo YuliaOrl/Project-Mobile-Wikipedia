@@ -2,7 +2,11 @@ package tests;
 
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
 
 @Owner("yuliaorlova")
@@ -12,6 +16,9 @@ public class AndroidWikipediaTests extends TestBase {
     Steps steps = new Steps();
 
     @Test
+    @Tags({@Tag("mobile"), @Tag("high")})
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка работы OnboardingScreen")
     void OnboardingScreenTest() {
 
         steps
@@ -28,6 +35,9 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
+    @Tags({@Tag("mobile"), @Tag("high")})
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка работы вкладок footter-меню")
     void CheckFootterTabbarTest() {
 
         steps
@@ -45,6 +55,9 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
+    @Tags({@Tag("mobile"), @Tag("high")})
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка работы перехода по содержанию статьи")
     void CheckChapterOfArticleTest() {
         String searchWord = "appium";
 
@@ -68,6 +81,9 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
+    @Tags({@Tag("mobile"), @Tag("high")})
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка работы поиска и открытия статьи по слову")
     void SearchWordTest() {
         String searchWord = "Selenide";
 
@@ -80,6 +96,9 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
+    @Tags({@Tag("mobile"), @Tag("high")})
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка работы поиска и открытия статьи по фразе")
     void SearchPhraseTest() {
         String searchPhrase = "Mobile testing";
 
