@@ -18,7 +18,7 @@ public class AndroidWikipediaTests extends TestBase {
     @Test
     @Tags({@Tag("mobile"), @Tag("high")})
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Проверка работы OnboardingScreen")
+    @DisplayName("Проверка работы Onboarding Screen")
     void OnboardingScreenTest() {
 
         steps

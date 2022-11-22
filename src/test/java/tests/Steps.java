@@ -2,7 +2,6 @@ package tests;
 
 import com.codeborne.selenide.Condition;
 import io.appium.java_client.AppiumBy;
-
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
@@ -13,19 +12,19 @@ import static io.qameta.allure.Allure.step;
 public class Steps {
 
     public Steps skipLanguage() {
-        step("Skip language alert", () ->
+        step("Пропуск выбора языка", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/fragment_onboarding_skip_button")).click());
         return this;
     }
 
     public Steps checkArticle() {
-        step("Check article", () ->
+        step("Проверка отображения статьи", () ->
             $(AppiumBy.className("android.webkit.WebView")).shouldBe(visible));
         return this;
     }
 
     public Steps checkContentScreen(String content) {
-        step("Check content onboarding screen", () -> {
+        step("Проверка контента страницы onboarding screen", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/primaryTextView")).shouldHave(text(content));
             $(AppiumBy.id("org.wikipedia.alpha:id/imageViewCentered")).shouldBe(visible);
         });
@@ -33,19 +32,19 @@ public class Steps {
     }
 
     public Steps openNextScreen() {
-        step("Open next screen", () ->
+        step("Переход на следующую страницу", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click());
         return this;
     }
 
     public Steps openFinishedScreen() {
-        step("Open finished screen", () ->
+        step("Открытие последней страницы onboarding screen", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/fragment_onboarding_done_button")).click());
         return this;
     }
 
     public Steps checkFinishedScreen() {
-        step("Checking onboarding is finished", () -> {
+        step("Проверка успешного завершения процесса onboarding", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/view_announcement_text")).shouldBe(visible);
             $(AppiumBy.id("org.wikipedia.alpha:id/search_container")).shouldBe(visible);
             $(AppiumBy.id("org.wikipedia.alpha:id/view_announcement_header_image")).shouldBe(visible);
@@ -56,55 +55,55 @@ public class Steps {
     }
 
     public Steps switchTabFootter(String content) {
-        step("Switch tab footter menu", () ->
+        step("Переход в следующий раздел footter menu", () ->
             $(AppiumBy.accessibilityId(content)).click());
         return this;
     }
 
     public Steps checkTabExplore(String content) {
-        step("Check tab \"Explore\"", () ->
+        step("Проверка контента раздела \"Explore\"", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/view_announcement_text")).shouldHave(Condition.text(content)));
         return this;
     }
 
     public Steps checkTabSaved(String content) {
-        step("Check tab \"Saved\"", () ->
+        step("Проверка контента раздела \"Saved\"", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/messageTitleView")).shouldHave(text(content)));
         return this;
     }
 
     public Steps checkTabSearch(String content) {
-        step("Check tab \"Search\"",() ->
+        step("Проверка контента раздела \"Search\"",() ->
             $(AppiumBy.id("org.wikipedia.alpha:id/history_title")).shouldHave(text(content)));
         return this;
     }
 
     public Steps checkTabEdits(String content) {
-        step("Check tab \"Edits\"",() ->
+        step("Проверка контента раздела \"Edits\"",() ->
             $(AppiumBy.id("org.wikipedia.alpha:id/messageTitleView")).shouldHave(text(content)));
         return this;
     }
 
     public Steps checkTabMore() {
-        step("Check tab \"More\"",() ->
+        step("Проверка раздела \"More\"",() ->
             $(AppiumBy.id("org.wikipedia.alpha:id/touch_outside")).shouldBe(visible));
         return this;
     }
 
     public Steps switchTabContents() {
-        step("Switch tab \"Contents\"", () ->
+        step("Переход в раздел \"Contents\"", () ->
             $(AppiumBy.accessibilityId("Contents")).click());
         return this;
     }
 
     public Steps checkTabContents() {
-        step("Check tab \"Contents\"", () ->
+        step("Проверка раздела \"Contents\"", () ->
             $(AppiumBy.id("org.wikipedia.alpha:id/toc_list")).shouldBe(visible));
         return this;
     }
 
     public Steps switchArticleTitleAndCheck(String content) {
-        step("Switch to article title and check it", () -> {
+        step("Переход в загаловок статьи и его проверка", () -> {
             $$(AppiumBy.id("org.wikipedia.alpha:id/page_toc_item_text")).findBy(text(content)).click();
             $(AppiumBy.className("android.webkit.WebView")).shouldHave(text(content));
         });
@@ -112,7 +111,7 @@ public class Steps {
     }
 
     public Steps switchArticleChapterAndCheck(String content) {
-        step("Switch article chapter and check it", () -> {
+        step("Переход в раздел статьи и его проверка", () -> {
             $$(AppiumBy.id("org.wikipedia.alpha:id/page_toc_item_text")).findBy(text(content)).click();
             $(AppiumBy.className("android.widget.TextView")).shouldBe(visible);
         });
@@ -120,7 +119,7 @@ public class Steps {
     }
 
     public Steps searchRequest(String searchRequest) {
-        step("Input search request", () -> {
+        step("Ввод поискового запроса", () -> {
             $(AppiumBy.id("org.wikipedia.alpha:id/search_container")).click();
             $(AppiumBy.id("org.wikipedia.alpha:id/search_src_text")).sendKeys(searchRequest);
         });
@@ -128,20 +127,20 @@ public class Steps {
     }
 
     public Steps verifyContentFound() {
-        step("Verify content found", () ->
+        step("Проверка, что результаты найдены", () ->
             $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title"))
                     .shouldHave(sizeGreaterThan(0)));
         return this;
     }
 
     public Steps openFirstArticle() {
-        step("Open first found article", () ->
+        step("Открытие первой найденной статьи", () ->
             $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title")).first().click());
         return this;
     }
 
     public Steps openRequestArticle(String searchRequest) {
-        step("Open article by search request", () ->
+        step("Открытие стать по поисковому запросу", () ->
             $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_title")).findBy(text(searchRequest)).click());
         return this;
     }
