@@ -55,14 +55,14 @@ Allure-отчет включает в себя:
 ```
 
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="images/logo/Jenkins.svg"> Сборка в Jenkins
-### <a target="_blank" href="https://jenkins.autotests.cloud/job/Auto%20testing%20main%20page%20Pobeda.aero/">*Jenkins job*</a>
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/Yulia%20Orlova%20Project%20auto%20testing%20Mobile%20Wikipedia/">*Jenkins job*</a>
 
 <p align="center">
 <img title="Jenkins Build" src="images/screenshots/jenkinsBuild.png">
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure_Report.svg"> Allure-отчет
-### <a target="_blank" href="https://jenkins.autotests.cloud/job/Auto%20testing%20main%20page%20Pobeda.aero/10/allure/">*Overview*</a>
+### <a target="_blank" href="https://jenkins.autotests.cloud/job/Yulia%20Orlova%20Project%20auto%20testing%20Mobile%20Wikipedia/4/allure/">*Overview*</a>
 
 <p align="center">
 <img title="Allure Overview" src="images/screenshots/allureReportMain.png">
@@ -86,13 +86,25 @@ Allure-отчет включает в себя:
 ### *Allure TestOps* <a target="_blank" href="https://allure.autotests.cloud/project/1669/dashboards">*Dashboard*</a>
 
 <p align="center">  
-<img title="Allure TestOps Dashboard" src="images/screenshots/AllureTestOpsDashboard.png">  
+<img title="Allure TestOps Dashboard" src="images/screenshots/allureTestOpsDashboard.png">  
 </p>  
 
 ### *Тест кейсы*
 
 <p align="center">  
-<img title="Allure TestOps Tests" src="images/screenshots/AllureTestOpsTestCases.png">  
+<img title="Allure TestOps Tests" src="images/screenshots/allureTestOpsTestCases.png">  
+</p>
+
+### *Запуски*
+
+<p align="center">  
+<img title="Allure TestOps Tests" src="images/screenshots/allureTestOpsLaunches.png">  
+</p>
+
+### *Результаты прохождения тестов*
+
+<p align="center">  
+<img title="Allure TestOps Tests" src="images/screenshots/allureTestOpsResult.png">  
 </p>
 
 ## <img width="4%" style="vertical-align:middle" title="Telegram" src="images/logo/Telegram.svg"> Уведомление в Telegram с использованием бота
@@ -105,7 +117,7 @@ Allure-отчет включает в себя:
 
 ## <img width="4%" style="vertical-align:middle" title="BrowserStack" src="images/logo/BrowserStack.svg"> Видео запуска одного из тестов в BrowserStack
 
-Для каждого теста выполняется запись видео. Ниже представлен пример видео прохождения теста.
+Для каждого теста выполняется запись видео. Ниже представлен пример видео прохождения теста на удаленном сервисе.
 <p align="center">
   <img title="BrowserStack Video" src="images/gif/videoExampleMobile.gif">
 </p>

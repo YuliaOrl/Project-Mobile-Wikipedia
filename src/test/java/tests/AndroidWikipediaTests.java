@@ -16,8 +16,8 @@ public class AndroidWikipediaTests extends TestBase {
     Steps steps = new Steps();
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high")})
-    @Severity(SeverityLevel.NORMAL)
+    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы Onboarding Screen")
     void OnboardingScreenTest() {
 
@@ -35,8 +35,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high")})
-    @Severity(SeverityLevel.NORMAL)
+    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы вкладок footter-меню")
     void CheckFootterTabbarTest() {
 
@@ -55,8 +55,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high")})
-    @Severity(SeverityLevel.NORMAL)
+    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы перехода по содержанию статьи")
     void CheckChapterOfArticleTest() {
         String searchWord = "appium";
@@ -81,8 +81,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high")})
-    @Severity(SeverityLevel.NORMAL)
+    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы поиска и открытия статьи по слову")
     void SearchWordTest() {
         String searchWord = "Selenide";
@@ -96,8 +96,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high")})
-    @Severity(SeverityLevel.NORMAL)
+    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
+    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы поиска и открытия статьи по фразе")
     void SearchPhraseTest() {
         String searchPhrase = "Mobile testing";
