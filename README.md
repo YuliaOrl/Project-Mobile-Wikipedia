@@ -16,6 +16,7 @@
 <img width="6%" title="Java" src="images/logo/Java.svg">
 <img width="6%" title="Java" src="images/logo/BrowserStack.svg">
 <img width="6%" title="Java" src="images/logo/AndroidStudio.svg">
+<img width="6%" title="Java" src="images/logo/Appium.svg">
 <img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
 <img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
 <img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
@@ -27,10 +28,9 @@
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
 </p>
 
-Автотесты написаны на <code>Java</code> с использованием <code>Gradle</code> и <code>JUnit 5</code>.
-Для Mobile тестов используется сервис [BrowserStack](https://www.browserstack.com/) для удаленного запуска и эмулятор [Android Studio](https://developer.android.com/studio).
-Тесты можно запускать и локально с помощью устройства Android.
-Сборка в <code>Jenkins</code> реализована с формированием Allure-отчета и отправкой уведомления с результатами тестирования в <code>Telegram</code> после завершения прохождения тестов.
+Автотесты написаны на <code>Java</code> с использованием <code>Gradle</code> и <code>JUnit 5</code>, а также фреймворка [Appium](https://appium.io/). Тесты можно запускать с помощью сервиса удаленного запуска [BrowserStack](https://www.browserstack.com/).
+Для локального запуска возможно использование эмулятора [Android Studio](https://developer.android.com/studio) или устройства Android.
+Сборка в <code>Jenkins</code> реализована с формированием  Allure-отчета и отправкой уведомления с результатами тестирования в <code>Telegram</code> после завершения прохождения тестов.
 
 Allure-отчет включает в себя:
 * названия тестов с шагами выполнения;
