@@ -14,15 +14,15 @@
 
 <p align="center">
 <img width="6%" title="Java" src="images/logo/Java.svg">
-<img width="6%" title="Java" src="images/logo/BrowserStack.svg">
-<img width="6%" title="Java" src="images/logo/AndroidStudio.svg">
-<img width="6%" title="Java" src="images/logo/Appium.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
+<img width="6%" title="Allure Report" src="images/logo/AllureReport.svg">
 <img width="6%" title="Allure TestOps" src="images/logo/AllureTestOps.svg">
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
+<img width="6%" title="IntelliJ IDEA" src="images/logo/IntelijIDEA.svg">
 <img width="6%" title="Selenide" src="images/logo/Selenide.svg">
 <img width="6%" title="Gradle" src="images/logo/Gradle.svg">
 <img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
+<img width="5%" title="Java" src="images/logo/BrowserStack.svg">
+<img width="7%" title="Java" src="images/logo/AndroidStudio.svg">
+<img width="5%" title="Java" src="images/logo/Appium.svg">
 <img width="6%" title="GitHub" src="images/logo/GitHub.svg">
 <img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
 <img width="6%" title="Telegram" src="images/logo/Telegram.svg">
@@ -61,7 +61,7 @@ Allure-отчет включает в себя:
 <img title="Jenkins Build" src="images/screenshots/jenkinsBuild.png">
 </p>
 
-## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/Allure_Report.svg"> Allure-отчет
+## <img width="4%" style="vertical-align:middle" title="Allure Report" src="images/logo/AllureReport.svg"> Allure-отчет
 ### <a target="_blank" href="https://jenkins.autotests.cloud/job/Yulia%20Orlova%20Project%20auto%20testing%20Mobile%20Wikipedia/4/allure/">*Overview*</a>
 
 <p align="center">
