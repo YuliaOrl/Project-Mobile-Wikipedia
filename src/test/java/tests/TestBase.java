@@ -20,17 +20,21 @@ public class TestBase {
     public static void setup() {
         Configuration.browserSize = null;
 
-        if (System.getProperty("deviceHost").equals("browserstack")) {
-            Configuration.browser = BrowserstackMobileDriver.class.getName();
-        } else if (System.getProperty("deviceHost").equals("emulation")) {
-            Configuration.browser = LocalMobileDriver.class.getName();
-        } else if (System.getProperty("deviceHost").equals("real")) {
-            Configuration.browser = LocalMobileDriver.class.getName();
+        switch (System.getProperty("deviceHost")) {
+            case ("browserstack"):
+                Configuration.browser = BrowserstackMobileDriver.class.getName();
+                break;
+            case ("real"):
+            case ("emulation"):
+                Configuration.browser = LocalMobileDriver.class.getName();
+                break;
+            default:
+                throw new RuntimeException("Environment is wrong");
         }
     }
 
     @BeforeEach
-    public void startDriver () {
+    public void startDriver() {
         addListener("AllureSelenide", new AllureSelenide());
         open();
     }
@@ -44,7 +48,7 @@ public class TestBase {
         closeWebDriver();
 
         if (System.getProperty("deviceHost").equals("browserstack")) {
-        Attach.video(sessionId);
+            Attach.video(sessionId);
         }
     }
 }

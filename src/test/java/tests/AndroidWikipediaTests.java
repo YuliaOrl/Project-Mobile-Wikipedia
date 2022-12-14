@@ -8,18 +8,19 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Tags;
 import org.junit.jupiter.api.Test;
+import tests.steps.Steps;
 
 @Owner("yuliaorlova")
 @Feature("Mobile тесты")
 @DisplayName("Mobile тесты для приложения Wikipedia")
+@Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
+@Severity(SeverityLevel.CRITICAL)
 public class AndroidWikipediaTests extends TestBase {
     Steps steps = new Steps();
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
-    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы Onboarding Screen")
-    void OnboardingScreenTest() {
+    void onboardingScreenTest() {
 
         steps
              .checkContentScreen("The Free Encyclopedia\n" +
@@ -35,10 +36,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
-    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы вкладок footter-меню")
-    void CheckFootterTabbarTest() {
+    void checkFootterTabbarTest() {
 
         steps
              .skipLanguage()
@@ -55,10 +54,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
-    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы перехода по содержанию статьи")
-    void CheckChapterOfArticleTest() {
+    void checkChapterOfArticleTest() {
         String searchWord = "appium";
 
         steps
@@ -81,10 +78,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
-    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы поиска и открытия статьи по слову")
-    void SearchWordTest() {
+    void searchWordTest() {
         String searchWord = "Selenide";
 
         steps
@@ -96,10 +91,8 @@ public class AndroidWikipediaTests extends TestBase {
     }
 
     @Test
-    @Tags({@Tag("mobile"), @Tag("high"), @Tag("critical")})
-    @Severity(SeverityLevel.CRITICAL)
     @DisplayName("Проверка работы поиска и открытия статьи по фразе")
-    void SearchPhraseTest() {
+    void searchPhraseTest() {
         String searchPhrase = "Mobile testing";
 
         steps
